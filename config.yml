@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: OCF System Status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -90,7 +90,7 @@ defaultContentLanguage: en
 # localhost should automatically work.
 #
 # Example: https://status.example.com/
-baseURL: https://status.example.com
+baseURL: https://dev-status.ocf.io/
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -105,11 +105,14 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-    - name: API
-      description: The guts of the application.
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
+    - name: Webhosting
+      description: Websites for users and student groups that use OCF servers
+    - name: SSH Login
+      description: Our public login server, ssh.ocf.berkeley.edu
+    - name: ocfweb
+      description: The OCF website.
+    - name: HPC
+      description: Our high performance computing cluster
 
   # What date format to use?
   #
@@ -134,7 +137,7 @@ params:
   #
   # Default: false
   # BOOLEAN; `true`, `false`
-  useLogo: true
+  useLogo: false
 
   # Where is the logo located, if one is
   # present at all?
@@ -144,13 +147,18 @@ params:
   #
   # Recommended: png, bmp, jpg, or gif
   # for best browser support!
-  logo: /logo.png
+  logo: /logo.svg
+
+  enableCustomHtml: true
 
   # This is the description that is shown
   # on the footer and meta tags.
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
-  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  description: The Open Computing Facility is run entirely by student volunteers. Thanks for flying OCF!
+
+  copyright: Board of Directors of the Open Computing Facility
+  aftercopyright: The Open Computing Facility is a Chartered Program of the ASUC.
 
   # Tabs on homepage
   # Uncomment to enable.
@@ -187,7 +195,7 @@ params:
   # warning: EE7600
   # down: DC143C
   # notice: 708090
-  brand: 181818
+  brand: 4891EA
   ok: 228B22
   disrupted: EE7600
   down: DC143C
