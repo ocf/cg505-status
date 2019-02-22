@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <link rel="alternate" type="text/html" href="https://status.example.com"/>
+    <title>Affected on Eggsample Status</title>
+    <link>https://status.example.com/affected/</link>
+    <description>Incident history</description>
+    <generator>github.com/cstate</generator>
+    <language>en</language>
+    
+    <lastBuildDate>2018-06-13T15:54:00+00:00</lastBuildDate>
+    <updated>2018-06-13T15:54:00+00:00</updated>
+    
+    
+    
+      <atom:link href="https://status.example.com/affected/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>API</title>
+        <link>https://status.example.com/affected/api/</link>
+        <pubDate>Wed, 13 Jun 2018 15:54:00 +0000</pubDate>
+        <guid>https://status.example.com/affected/api/</guid>
+        <category></category>
+        <description></description>
+        <content type="html"></content>
+      </item>
+    
+      <item>
+        <title>Media Proxy</title>
+        <link>https://status.example.com/affected/media-proxy/</link>
+        <pubDate>Fri, 25 May 2018 04:13:00 +0000</pubDate>
+        <guid>https://status.example.com/affected/media-proxy/</guid>
+        <category></category>
+        <description></description>
+        <content type="html"></content>
+      </item>
+    
+  </channel>
+</rss>
