@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <link rel="alternate" type="text/html" href="https://status.example.com"/>
-    <title>API on Eggsample Status</title>
-    <link>https://status.example.com/affected/api/</link>
+    <link rel="alternate" type="text/html" href="https://dev-status.ocf.io/"/>
+    <title>API on OCF System Status</title>
+    <link>https://dev-status.ocf.io/affected/api/</link>
     <description>Incident history</description>
     <generator>github.com/cstate</generator>
     <language>en</language>
@@ -13,14 +13,14 @@
     
     
     
-      <atom:link href="https://status.example.com/affected/api/index.xml" rel="self" type="application/rss+xml" />
+      <atom:link href="https://dev-status.ocf.io/affected/api/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
         <title>Maintenance Window</title>
-        <link>https://status.example.com/issues/2018-06-13-maintenance-window/</link>
+        <link>https://dev-status.ocf.io/issues/2018-06-13-maintenance-window/</link>
         <pubDate>Wed, 13 Jun 2018 15:54:00 +0000</pubDate>
-        <guid>https://status.example.com/issues/2018-06-13-maintenance-window/</guid>
+        <guid>https://dev-status.ocf.io/issues/2018-06-13-maintenance-window/</guid>
         <category>2018-06-13 17:30:00</category>
         <description>Just began - We&amp;rsquo;re currently shutting down the network. (15:54 — Jun 13) </description>
         <content type="html">&lt;p&gt;&lt;em&gt;Just began&lt;/em&gt; - We&amp;rsquo;re currently shutting down the network. 
@@ -32,9 +32,9 @@
     
       <item>
         <title>[Resolved] US East Connection Issues</title>
-        <link>https://status.example.com/issues/2018-05-25-us-east-conn-issues/</link>
+        <link>https://dev-status.ocf.io/issues/2018-05-25-us-east-conn-issues/</link>
         <pubDate>Fri, 25 May 2018 04:13:00 +0000</pubDate>
-        <guid>https://status.example.com/issues/2018-05-25-us-east-conn-issues/</guid>
+        <guid>https://dev-status.ocf.io/issues/2018-05-25-us-east-conn-issues/</guid>
         <category>2018-05-25 04:13:59</category>
         <description>Resolved - We believe all users experiencing issues have been able to connect at this time. (05:54 — May 25) Monitoring - We believe the connectivity issues are being caused by an isolated ISP issue. We&amp;rsquo;ve had reports that swapping to Google DNS servers (see here; https://developers.google.com/speed/public-dns/docs/using) resolves the problem for users. (04:40 — May 25) Investigating - We&amp;rsquo;re aware of reports that users are experiencing connection issues on the East coast of the United States.</description>
         <content type="html">&lt;p&gt;&lt;em&gt;Resolved&lt;/em&gt; -
@@ -57,9 +57,9 @@ We believe all users experiencing issues have been able to connect at this time.
     
       <item>
         <title>[Resolved] Unavailable Guilds &amp; Connection Issues</title>
-        <link>https://status.example.com/issues/2018-04-13-unavailable-guilds-connection-issues/</link>
+        <link>https://dev-status.ocf.io/issues/2018-04-13-unavailable-guilds-connection-issues/</link>
         <pubDate>Fri, 13 Apr 2018 15:54:00 +0000</pubDate>
-        <guid>https://status.example.com/issues/2018-04-13-unavailable-guilds-connection-issues/</guid>
+        <guid>https://dev-status.ocf.io/issues/2018-04-13-unavailable-guilds-connection-issues/</guid>
         <category>2018-04-13 17:30:00</category>
         <description>Post-mortem
 At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system.</description>
@@ -88,9 +88,9 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
     
       <item>
         <title>[Resolved] Issues Sending DMs</title>
-        <link>https://status.example.com/issues/2018-01-17-sending-dms-impacted/</link>
+        <link>https://dev-status.ocf.io/issues/2018-01-17-sending-dms-impacted/</link>
         <pubDate>Wed, 17 Jan 2018 16:24:00 +0000</pubDate>
-        <guid>https://status.example.com/issues/2018-01-17-sending-dms-impacted/</guid>
+        <guid>https://dev-status.ocf.io/issues/2018-01-17-sending-dms-impacted/</guid>
         <category>2018-01-17 16:58:00</category>
         <description>Update - This incident has been resolved.
 Investigating - We&amp;rsquo;re aware of an issue affecting sending DMs and viewing online friends. We&amp;rsquo;re online and working on a resolution.</description>

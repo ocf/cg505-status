@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    
-    <title>OCF System Status</title>
-    <link>https://dev-status.ocf.io/</link>
+    <link rel="alternate" type="text/html" href="https://dev-status.ocf.io/"/>
+    <title>ocfweb on OCF System Status</title>
+    <link>https://dev-status.ocf.io/affected/ocfweb/</link>
     <description>Incident history</description>
     <generator>github.com/cstate</generator>
     <language>en</language>
     
-    <lastBuildDate>Fri, 15 Feb 2019 14:55:00 +0000</lastBuildDate>
+    <lastBuildDate>2019-02-15T14:55:00+00:00</lastBuildDate>
+    <updated>2019-02-15T14:55:00+00:00</updated>
     
     
     
-      <atom:link href="https://dev-status.ocf.io/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dev-status.ocf.io/affected/ocfweb/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
@@ -22,7 +22,8 @@
         <pubDate>Fri, 15 Feb 2019 14:55:00 +0000</pubDate>
         <guid>https://dev-status.ocf.io/issues/2019-02-15-ocfweb-downtime/</guid>
         <category>2019-02-15 15:18:00</category>
-        <description>&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - This incident has been resolved. 
+        <description>Update - This incident has been resolved. (15:18 — Feb 15) Update - The OCF website is now completely down as we attempt to redploy a fixed version. (15:14 — Feb 15) Investigating - We are seeing server errors for ocfweb access. (14:55 — Feb 15) </description>
+        <content type="html">&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - This incident has been resolved. 
   &lt;span class=&#34;faded&#34;&gt;(15:18 — Feb 15)&lt;/span&gt;
 
 &lt;/p&gt;
@@ -36,7 +37,7 @@
   &lt;span class=&#34;faded&#34;&gt;(14:55 — Feb 15)&lt;/span&gt;
 
 &lt;/p&gt;
-</description>
+</content>
       </item>
     
   </channel>

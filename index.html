@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="description" content="">
-    <title>Eggsample Status</title>
-    <link rel="canonical" href="https://status.example.com/">
-    <link rel="alternate" type="application/rss+xml" href="https://status.example.com/index.xml" title="Eggsample Status" />
+    <title>OCF System Status</title>
+    <link rel="canonical" href="https://dev-status.ocf.io/">
+    <link rel="alternate" type="application/rss+xml" href="https://dev-status.ocf.io/index.xml" title="OCF System Status" />
     <meta name="generator" content="cState v3.0.0 - Stable 2019-01-24">
-    <meta name="theme-color" content="#181818">
+    <meta name="theme-color" content="#4891EA">
     <script>
-    var themeBrandColor = '#181818';
+    var themeBrandColor = '#4891EA';
     var themeOkColor = '#228B22';
     var themeNoticeColor = '#708090';
     var themeDisruptedColor = '#EE7600';
@@ -130,7 +130,7 @@
 
     .header {
       padding: 8px 0;
-      background: #181818;
+      background: #4891EA;
     }
 
     .header a {
@@ -297,6 +297,21 @@
     }
     </style>
     
+      <style>
+ .header__logo > h1 {
+     background-image: url(/logo.svg);
+     background-position: 15px 8px;
+     background-repeat: no-repeat;
+     background-size: 31px 41px;
+     padding-left: 58px;
+     font-size: 28px;
+     color: #000;
+     height: 60px;
+     padding-top: 21px;
+ }
+</style>
+
+    
   </head>
 
 
@@ -307,20 +322,26 @@
 
 
 
-  <body class="status-homepage status-notice ">
+  <body class="status-homepage status-ok ">
     
+  
+
+
 
 
 <div class="header">
   <div class="contain">
     <a href="/" class="header__logo header__logo--small">
       
-        <img src="/logo.png" alt="Eggsample Status">
-          
+        <h1>OCF System Status</h1>
+      
     </a>
   </div>
 </div>
 
+
+
+  
 
 
 
@@ -338,27 +359,13 @@
           
           
           
-            Please read announcement
+            All systems operational
           
         </strong>
 
         <span class="summary__date float-right" onclick="location.reload()"></span>
       </div>
 
-      
-      <div class="announcement-box">
-        
-          <div class="padding">
-            <p><strong class="bold">Maintenance Window</strong></p>
-            <p><em>Just began</em> - We&rsquo;re currently shutting down the network. 
-  <span class="faded">(15:54 — Jun 13)</span>
-
-</p>
-
-            <p><a href="https://status.example.com/issues/2018-06-13-maintenance-window/">Continue reading</a></p>
-          </div>
-        
-      </div>
       
 
       
@@ -379,10 +386,18 @@
           
 
           <div class="component" data-status="ok">
-            <a href="/affected/gateway" class="no-underline">
-              Gateway
+            <a href="/affected/webhosting" class="no-underline">
+              Webhosting
             </a>
 
+            
+              <span class="tooltip tooltip--small">
+                &nbsp; <span class="faded">(?)</span>
+
+                <span class="tooltip__text">
+                  Websites for users and student groups that use OCF servers
+                </span>
+              </span>
             
 
             <span class="component-status">
@@ -402,9 +417,9 @@
           
           
 
-          <div class="component" data-status="notice">
-            <a href="/affected/api" class="no-underline">
-              API
+          <div class="component" data-status="ok">
+            <a href="/affected/ssh-login" class="no-underline">
+              SSH Login
             </a>
 
             
@@ -412,7 +427,7 @@
                 &nbsp; <span class="faded">(?)</span>
 
                 <span class="tooltip__text">
-                  The guts of the application.
+                  Our public login server, ssh.ocf.berkeley.edu
                 </span>
               </span>
             
@@ -421,7 +436,7 @@
               
               
               
-                Maintenance
+                Operational
               
             </span>
 
@@ -435,8 +450,8 @@
           
 
           <div class="component" data-status="ok">
-            <a href="/affected/media-proxy" class="no-underline">
-              Media Proxy
+            <a href="/affected/ocfweb" class="no-underline">
+              ocfweb
             </a>
 
             
@@ -444,7 +459,39 @@
                 &nbsp; <span class="faded">(?)</span>
 
                 <span class="tooltip__text">
-                  This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
+                  The OCF website.
+                </span>
+              </span>
+            
+
+            <span class="component-status">
+              
+              
+              
+                Operational
+              
+            </span>
+
+            
+          </div>
+        
+          
+
+          
+          
+          
+
+          <div class="component" data-status="ok">
+            <a href="/affected/hpc" class="no-underline">
+              HPC
+            </a>
+
+            
+              <span class="tooltip tooltip--small">
+                &nbsp; <span class="faded">(?)</span>
+
+                <span class="tooltip__text">
+                  Our high performance computing cluster
                 </span>
               </span>
             
@@ -461,6 +508,9 @@
           </div>
         
       </div>
+
+    
+      
 
     
     
@@ -485,124 +535,16 @@
 
 
 
-<a href="https://status.example.com/issues/2018-06-13-maintenance-window/" class="issue no-underline">
-  
-
-  <small class="date float-right">
-    
-      June 13, 2018 at 3:54 PM
-    
-  </small>
-
-  <h3>
-    Maintenance Window
-  </h3>
-
-  
-  
-  
-
-  
-  <div class="error">Unresolved!</div>
-
-  
-</a>
-
-      
-        
-
-
-
-
-
-
-<a href="https://status.example.com/issues/2018-05-25-us-east-conn-issues/" class="issue no-underline">
+<a href="https://dev-status.ocf.io/issues/2019-02-15-ocfweb-downtime/" class="issue no-underline">
   
     <small class="date float-right">
       
-        May 25, 2018 at 4:13 AM
+        February 15, 2019 at 2:55 PM
       
     </small>
 
     <h3>
-      US East Connection Issues
-    </h3>
-
-    
-    
-    
-
-    
-    
-    <div class="faded">
-      Resolved in under a minute
-    </div>
-    
-
-
-  
-</a>
-
-      
-        
-
-
-
-
-
-
-<a href="https://status.example.com/issues/2018-04-13-unavailable-guilds-connection-issues/" class="issue no-underline">
-  
-    <small class="date float-right">
-      
-        April 13, 2018 at 3:54 PM
-      
-    </small>
-
-    <h3>
-      Unavailable Guilds &amp; Connection Issues
-    </h3>
-
-    
-    
-    
-
-    
-    
-      
-        <div class="warning">
-          Resolved after
-
-          
-
-          1h
-          36m of downtime
-        </div>
-      
-    
-
-
-  
-</a>
-
-      
-        
-
-
-
-
-
-
-<a href="https://status.example.com/issues/2018-01-17-sending-dms-impacted/" class="issue no-underline">
-  
-    <small class="date float-right">
-      
-        January 17, 2018 at 4:24 PM
-      
-    </small>
-
-    <h3>
-      Issues Sending DMs
+      OCF website downtime
     </h3>
 
     
@@ -617,7 +559,7 @@
 
           
 
-          34m
+          23m
            of downtime
         </div>
       
@@ -722,14 +664,19 @@
 
 
   
+  
+
+
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">2019 &copy; Eggsample Status</strong>
+    <p><strong class="bold">2019 &copy; Board of Directors of the Open Computing Facility</strong>
        &nbsp; • &nbsp; <a href="#">Back to top</a>
     </p>
 
-    <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
+	<p>The Open Computing Facility is a Chartered Program of the ASUC.
+
+    <p>The Open Computing Facility is run entirely by student volunteers. Thanks for flying OCF!</p>
 
     
     <small class="footer__copyright faded">Powered by <a href="https://github.com/cstate/cstate"><b>cState</b></a></small>
@@ -740,13 +687,16 @@
       <small>
         Subscribe via RSS —
         
-          <a href="https://status.example.com/index.xml" class="no-underline">to all updates</a>
+          <a href="https://dev-status.ocf.io/index.xml" class="no-underline">to all updates</a>
         
         
       </small>
     </p>
   </div>
 </div>
+
+
+  
 
 
 

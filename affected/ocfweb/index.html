@@ -6,14 +6,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="description" content="Post-mortem
-At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system.">
-    <title>Unavailable Guilds &amp; Connection Issues — Eggsample Status</title>
-    <link rel="canonical" href="https://status.example.com/issues/2018-04-13-unavailable-guilds-connection-issues/">
+    <meta name="description" content="">
+    <title>ocfweb — OCF System Status</title>
+    <link rel="canonical" href="https://dev-status.ocf.io/affected/ocfweb/">
+    <link rel="alternate" type="application/rss+xml" href="https://dev-status.ocf.io/affected/ocfweb/index.xml" title="OCF System Status" />
     <meta name="generator" content="cState v3.0.0 - Stable 2019-01-24">
-    <meta name="theme-color" content="#181818">
+    <meta name="theme-color" content="#4891EA">
     <script>
-    var themeBrandColor = '#181818';
+    var themeBrandColor = '#4891EA';
     var themeOkColor = '#228B22';
     var themeNoticeColor = '#708090';
     var themeDisruptedColor = '#EE7600';
@@ -130,7 +130,7 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
     .header {
       padding: 8px 0;
-      background: #181818;
+      background: #4891EA;
     }
 
     .header a {
@@ -297,102 +297,108 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
     }
     </style>
     
+      <style>
+ .header__logo > h1 {
+     background-image: url(/logo.svg);
+     background-position: 15px 8px;
+     background-repeat: no-repeat;
+     background-size: 31px 41px;
+     padding-left: 58px;
+     font-size: 28px;
+     color: #000;
+     height: 60px;
+     padding-top: 21px;
+ }
+</style>
+
+    
   </head>
 
 
 
+  <body class="default list">
+    <header>
+      <div class="contain">
+        <a href="https://dev-status.ocf.io/">← Go back to <em>OCF System Status</em></a>
+        <div class="padding"></div>
+        <div class="padding"></div>
 
+        <h1 class="clean">ocfweb</h1>
 
+        
+          
+        
+          
+        
+          
+            
+              <p class="bold">The OCF website.</p>
+            
+          
+        
+          
+        
 
+        <small class="faded">1 entries, newest to oldest</small>
 
-
-
-  <body class="issues single">
-    <div class="contain">
-      <a href="https://status.example.com">← Go back to <em>Eggsample Status</em></a>
-    </div>
-
-    <div class="contain">
+        <div class="padding"></div>
+        <hr class="clean">
+      </div>
       
+    </header>
+
+    <div class="contain contain--more" id="incidents">
+      
+        
+        
+          
 
 
 
 
 
 
-<div class="article">
-  <h1 class="clean">
-    Unavailable Guilds &amp; Connection Issues
-  </h1>
+<a href="https://dev-status.ocf.io/issues/2019-02-15-ocfweb-downtime/" class="issue no-underline">
+  
+    <small class="date float-right">
+      
+        February 15, 2019 at 2:55 PM
+      
+    </small>
 
-  <small class="date">
+    <h3>
+      OCF website downtime
+    </h3>
+
     
-      April 13, 2018 at 3:54 PM
     
-  </small>
-
-  <p><small>
     
-      <a href="/affected/api" class="tag no-underline">API</a>
+
     
-  </small></p>
-
-  
-  
-  
-  
-
-
-  
-  
     
-      <div class="warning tooltip">
-        <strong>
+      
+        <div class="ok">
           Resolved after
 
           
 
-          1h
-          36m of downtime.
-        </strong>
-
-        <span class="tooltip__text">
-          
-            April 13, 2018 at 5:30 PM
-          
-        </span>
-      </div>
+          23m
+           of downtime
+        </div>
+      
     
+
+
   
-  
+</a>
 
-  <hr>
-  <p><em>Post-mortem</em></p>
+        
 
-<p>At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system. These issues caused enough critical impact that Example Chat App’s engineering team was forced to fully restart the service, reconnecting millions of clients over a period of 20 minutes.</p>
-
-<hr />
-
-<p><em>Update</em> - A fix has been implemented and we are monitoring the results. Looks like this has been fixed. 
-  <span class="faded">(17:30 — Apr 13)</span>
-
-</p>
-
-<p><em>Monitoring</em> - After hitting the ole reboot button Example Chat App is now recovering. We&rsquo;re going to continue to monitor as everyone reconnects. 
-  <span class="faded">(16:50 — Apr 13)</span>
-
-</p>
-
-<p><em>Investigating</em> - We&rsquo;re aware of users experiencing unavailable guilds and issues when attempting to connect. We&rsquo;re currently investigating. 
-  <span class="faded">(15:54 — Apr 13)</span>
-
-</p>
-
-</div>
-<div class="padding"></div>
-
+        
+        
+      
+      <div class="padding"></div>
     </div>
-
 
     <script type="text/javascript">
   
@@ -479,14 +485,19 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
 
     
+  
+
+
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">2019 &copy; Eggsample Status</strong>
+    <p><strong class="bold">2019 &copy; Board of Directors of the Open Computing Facility</strong>
        &nbsp; • &nbsp; <a href="#">Back to top</a>
     </p>
 
-    <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
+	<p>The Open Computing Facility is a Chartered Program of the ASUC.
+
+    <p>The Open Computing Facility is run entirely by student volunteers. Thanks for flying OCF!</p>
 
     
     <small class="footer__copyright faded">Powered by <a href="https://github.com/cstate/cstate"><b>cState</b></a></small>
@@ -497,15 +508,20 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
       <small>
         Subscribe via RSS —
         
-          <a href="https://status.example.com/index.xml" class="no-underline">to all updates</a>
+          <a href="https://dev-status.ocf.io/index.xml" class="no-underline">to all updates</a>
         
         
+        
+          or <a href="https://dev-status.ocf.io/affected/ocfweb/index.xml" class="no-underline">only this feed (ocfweb)</a>
         
         
       </small>
     </p>
   </div>
 </div>
+
+
+  
 
 
 

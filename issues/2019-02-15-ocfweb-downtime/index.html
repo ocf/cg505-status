@@ -6,13 +6,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="description" content="Resolved - We believe all users experiencing issues have been able to connect at this time. (05:54 — May 25) Monitoring - We believe the connectivity issues are being caused by an isolated ISP issue. We&rsquo;ve had reports that swapping to Google DNS servers (see here; https://developers.google.com/speed/public-dns/docs/using) resolves the problem for users. (04:40 — May 25) Investigating - We&rsquo;re aware of reports that users are experiencing connection issues on the East coast of the United States.">
-    <title>US East Connection Issues — Eggsample Status</title>
-    <link rel="canonical" href="https://status.example.com/issues/2018-05-25-us-east-conn-issues/">
+    <meta name="description" content="Update - This incident has been resolved. (15:18 — Feb 15) Update - The OCF website is now completely down as we attempt to redploy a fixed version. (15:14 — Feb 15) Investigating - We are seeing server errors for ocfweb access. (14:55 — Feb 15) ">
+    <title>OCF website downtime — OCF System Status</title>
+    <link rel="canonical" href="https://dev-status.ocf.io/issues/2019-02-15-ocfweb-downtime/">
     <meta name="generator" content="cState v3.0.0 - Stable 2019-01-24">
-    <meta name="theme-color" content="#181818">
+    <meta name="theme-color" content="#4891EA">
     <script>
-    var themeBrandColor = '#181818';
+    var themeBrandColor = '#4891EA';
     var themeOkColor = '#228B22';
     var themeNoticeColor = '#708090';
     var themeDisruptedColor = '#EE7600';
@@ -129,7 +129,7 @@
 
     .header {
       padding: 8px 0;
-      background: #181818;
+      background: #4891EA;
     }
 
     .header a {
@@ -296,6 +296,21 @@
     }
     </style>
     
+      <style>
+ .header__logo > h1 {
+     background-image: url(/logo.svg);
+     background-position: 15px 8px;
+     background-repeat: no-repeat;
+     background-size: 31px 41px;
+     padding-left: 58px;
+     font-size: 28px;
+     color: #000;
+     height: 60px;
+     padding-top: 21px;
+ }
+</style>
+
+    
   </head>
 
 
@@ -308,7 +323,7 @@
 
   <body class="issues single">
     <div class="contain">
-      <a href="https://status.example.com">← Go back to <em>Eggsample Status</em></a>
+      <a href="https://dev-status.ocf.io/">← Go back to <em>OCF System Status</em></a>
     </div>
 
     <div class="contain">
@@ -321,20 +336,18 @@
 
 <div class="article">
   <h1 class="clean">
-    US East Connection Issues
+    OCF website downtime
   </h1>
 
   <small class="date">
     
-      May 25, 2018 at 4:13 AM
+      February 15, 2019 at 2:55 PM
     
   </small>
 
   <p><small>
     
-      <a href="/affected/api" class="tag no-underline">API</a>
-    
-      <a href="/affected/media-proxy" class="tag no-underline">Media Proxy</a>
+      <a href="/affected/ocfweb" class="tag no-underline">ocfweb</a>
     
   </small></p>
 
@@ -346,28 +359,40 @@
 
   
   
-  <div class="faded">
-    <strong>
-    Resolved in under a minute.
-    </strong>
-  </div>
+    
+      <div class="ok tooltip">
+        <strong>
+          Resolved after
+
+          
+
+          23m
+          of downtime.
+        </strong>
+
+        <span class="tooltip__text">
+          
+            February 15, 2019 at 3:18 PM
+          
+        </span>
+      </div>
+    
   
   
 
   <hr>
-  <p><em>Resolved</em> -
-We believe all users experiencing issues have been able to connect at this time. 
-  <span class="faded">(05:54 — May 25)</span>
+  <p><em>Update</em> - This incident has been resolved. 
+  <span class="faded">(15:18 — Feb 15)</span>
 
 </p>
 
-<p><em>Monitoring</em> - We believe the connectivity issues are being caused by an isolated ISP issue. We&rsquo;ve had reports that swapping to Google DNS servers (see here; <a href="https://developers.google.com/speed/public-dns/docs/using">https://developers.google.com/speed/public-dns/docs/using</a>) resolves the problem for users. 
-  <span class="faded">(04:40 — May 25)</span>
+<p><em>Update</em> - The OCF website is now completely down as we attempt to redploy a fixed version. 
+  <span class="faded">(15:14 — Feb 15)</span>
 
 </p>
 
-<p><em>Investigating</em> - We&rsquo;re aware of reports that users are experiencing connection issues on the East coast of the United States. We&rsquo;re currently investigating these issues, and apologize for any inconvenience it may be causing you. 
-  <span class="faded">(04:13 — May 25)</span>
+<p><em>Investigating</em> - We are seeing server errors for ocfweb access. 
+  <span class="faded">(14:55 — Feb 15)</span>
 
 </p>
 
@@ -462,14 +487,19 @@ We believe all users experiencing issues have been able to connect at this time.
 
 
     
+  
+
+
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">2019 &copy; Eggsample Status</strong>
+    <p><strong class="bold">2019 &copy; Board of Directors of the Open Computing Facility</strong>
        &nbsp; • &nbsp; <a href="#">Back to top</a>
     </p>
 
-    <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
+	<p>The Open Computing Facility is a Chartered Program of the ASUC.
+
+    <p>The Open Computing Facility is run entirely by student volunteers. Thanks for flying OCF!</p>
 
     
     <small class="footer__copyright faded">Powered by <a href="https://github.com/cstate/cstate"><b>cState</b></a></small>
@@ -480,7 +510,7 @@ We believe all users experiencing issues have been able to connect at this time.
       <small>
         Subscribe via RSS —
         
-          <a href="https://status.example.com/index.xml" class="no-underline">to all updates</a>
+          <a href="https://dev-status.ocf.io/index.xml" class="no-underline">to all updates</a>
         
         
         
@@ -489,6 +519,9 @@ We believe all users experiencing issues have been able to connect at this time.
     </p>
   </div>
 </div>
+
+
+  
 
 
 
