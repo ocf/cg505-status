@@ -1,7 +1,3 @@
 [submodule "themes/cstate"]
 	path = themes/cstate
 	url = https://github.com/cstate/cstate
-[submodule "public"]
-	path = public
-	url = git@github.com:ocf/status
-	branch = gh-pages
