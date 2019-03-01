@@ -10,8 +10,8 @@ To run a dev version and make sure your changes look good:
 make dev
 ```
 
-To deploy your changes (this should happen *before* (!) you commit
-your changes):
+Normally, Jenkins will build and deploy your changes once you push to
+master. However, if Jenkins is down, you can do it manually:
 
 ```sh
 make deploy
