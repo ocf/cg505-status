@@ -30,21 +30,21 @@ worktree:
 	git fetch
 	git worktree add -B gh-pages public origin/gh-pages
 
-.PHONY: deploy_check
-deploy_check:
+.PHONY: deploy-check
+deploy-check:
 	@echo -n "Is Jenkins down? [y/N] " && read ans && [ $${ans:-N} == y ] || { echo "If Jenkins is up, you should use it to deploy." && false; }
 	@[ -z "$$(git status --porcelain)" ] || { echo "You have uncommitted changes. Please commit your changes and try again." && false; }
 
-.PHONY: really_deploy
+.PHONY: deploy-to-gh-pages
 .NOTPARALLEL:
-really_deploy: worktree build
+deploy-to-gh-pages: worktree build
 	git -C public add --all
 	git -C public commit -m "Makefile deploy: $(USER)"
 	git -C public push origin gh-pages
 
 .PHONY: deploy
 .NOTPARALLEL:
-deploy: deploy_check really_deploy
+deploy: deploy-check deploy-to-gh-pages
 
 $(HUGO_EXEC):
 	mkdir -p vendor

@@ -38,7 +38,7 @@ pipeline {
                     credentialsId: 'jenkins-static-deploy-key',
                     keyFileVariable: 'SSHKEY_LOCATION')
                 ]) {
-                    sh 'GIT_SSH_COMMAND="ssh -i \"$(SSHKEY_LOCATION)\"" make really_deploy'
+                    sh 'GIT_SSH_COMMAND="ssh -i \"$(SSHKEY_LOCATION)\"" make deploy-to-gh-pages'
                 }
             }
         }
