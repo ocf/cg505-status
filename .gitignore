@@ -1,0 +1,5 @@
+# hugo binaries
+vendor
+
+# build folder
+public
