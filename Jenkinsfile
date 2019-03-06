@@ -30,15 +30,12 @@ pipeline {
             when {
                 branch 'master'
             }
-            agent {
-                label 'deploy'
-            }
             steps {
                 withCredentials([sshUserPrivateKey(
                     credentialsId: 'jenkins-static-deploy-key',
                     keyFileVariable: 'SSHKEY_LOCATION')
                 ]) {
-                    sh 'GIT_SSH_COMMAND="ssh -i \"$(SSHKEY_LOCATION)\"" make deploy-to-gh-pages'
+                    sh 'GIT_SSH_COMMAND="ssh -i \"${SSHKEY_LOCATION}\"" make deploy-to-gh-pages'
                 }
             }
         }
