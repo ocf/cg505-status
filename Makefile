@@ -27,7 +27,7 @@ worktree:
 	git worktree prune
 	rm -rf .git/worktrees/public/
 	@echo "Checking out gh-pages worktree in public/"
-	git fetch origin gh-pages
+	git fetch origin gh-pages:refs/remotes/origin/gh-pages
 	git worktree add -B gh-pages public origin/gh-pages
 
 .PHONY: deploy-check
@@ -39,7 +39,7 @@ deploy-check:
 .NOTPARALLEL:
 deploy-to-gh-pages: worktree build
 	git -C public add --all
-	git -C public commit -m "Makefile deploy: $(USER)"
+	git -C public commit -m "Makefile deploy: $(USER)" || echo "If nothing changed, this is fine."
 	git -C public push origin gh-pages
 
 .PHONY: deploy
