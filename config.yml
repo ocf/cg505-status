@@ -110,9 +110,11 @@ params:
     - name: SSH Login
       description: Our public login server, ssh.ocf.berkeley.edu
     - name: ocfweb
-      description: The OCF website.
+      description: The OCF website
     - name: HPC
       description: Our high performance computing cluster
+    - name: Mirrors
+      description: Our mirrors service, mirrors.ocf.berkeley.edu
 
   # What date format to use?
   #
