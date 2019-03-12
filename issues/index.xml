@@ -8,13 +8,42 @@
     <generator>github.com/cstate</generator>
     <language>en</language>
     
-    <lastBuildDate>2019-02-15T14:55:00+00:00</lastBuildDate>
-    <updated>2019-02-15T14:55:00+00:00</updated>
+    <lastBuildDate>2019-03-11T01:20:00+00:00</lastBuildDate>
+    <updated>2019-03-11T01:20:00+00:00</updated>
     
     
     
       <atom:link href="https://dev-status.ocf.io/issues/index.xml" rel="self" type="application/rss+xml" />
     
+    
+      <item>
+        <title>[Resolved] Mirrors transfer downtime</title>
+        <link>https://dev-status.ocf.io/issues/2019-03-11-mirrors-downtime/</link>
+        <pubDate>Mon, 11 Mar 2019 01:20:00 +0000</pubDate>
+        <guid>https://dev-status.ocf.io/issues/2019-03-11-mirrors-downtime/</guid>
+        <category>2019-03-11 12:30:00</category>
+        <description>Resolved - After some configuration fixes, all mirrors are correctly syncing. (12:30 — Mar 11) Update - After more investigation, it seems some mirrors are out of date, and not syncing correctly. (10:25 — Mar 11) Resolved - After updating IP address entries on the new mirrors server, traffic seems to have stabilized. (02:36 — Mar 11) Investigating - After transferring our mirrors service to a new server, connections from certain networks outside Berkeley seem to be blocked.</description>
+        <content type="html">&lt;p&gt;&lt;em&gt;Resolved&lt;/em&gt; - After some configuration fixes, all mirrors are correctly syncing. 
+  &lt;span class=&#34;faded&#34;&gt;(12:30 — Mar 11)&lt;/span&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - After more investigation, it seems some mirrors are out of date, and not syncing correctly. 
+  &lt;span class=&#34;faded&#34;&gt;(10:25 — Mar 11)&lt;/span&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Resolved&lt;/em&gt; - After updating IP address entries on the new mirrors server, traffic seems to have stabilized. 
+  &lt;span class=&#34;faded&#34;&gt;(02:36 — Mar 11)&lt;/span&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - After transferring our mirrors service to a new server, connections from certain networks outside Berkeley seem to be blocked. 
+  &lt;span class=&#34;faded&#34;&gt;(01:20 — Mar 11)&lt;/span&gt;
+
+&lt;/p&gt;
+</content>
+      </item>
     
       <item>
         <title>[Resolved] OCF website downtime</title>

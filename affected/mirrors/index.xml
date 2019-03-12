@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    
-    <title>OCF System Status</title>
-    <link>https://dev-status.ocf.io/</link>
+    <link rel="alternate" type="text/html" href="https://dev-status.ocf.io/"/>
+    <title>Mirrors on OCF System Status</title>
+    <link>https://dev-status.ocf.io/affected/mirrors/</link>
     <description>Incident history</description>
     <generator>github.com/cstate</generator>
     <language>en</language>
     
-    <lastBuildDate>Mon, 11 Mar 2019 01:20:00 +0000</lastBuildDate>
+    <lastBuildDate>2019-03-11T01:20:00+00:00</lastBuildDate>
+    <updated>2019-03-11T01:20:00+00:00</updated>
     
     
     
-      <atom:link href="https://dev-status.ocf.io/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dev-status.ocf.io/affected/mirrors/index.xml" rel="self" type="application/rss+xml" />
     
     
       <item>
@@ -22,7 +22,8 @@
         <pubDate>Mon, 11 Mar 2019 01:20:00 +0000</pubDate>
         <guid>https://dev-status.ocf.io/issues/2019-03-11-mirrors-downtime/</guid>
         <category>2019-03-11 12:30:00</category>
-        <description>&lt;p&gt;&lt;em&gt;Resolved&lt;/em&gt; - After some configuration fixes, all mirrors are correctly syncing. 
+        <description>Resolved - After some configuration fixes, all mirrors are correctly syncing. (12:30 — Mar 11) Update - After more investigation, it seems some mirrors are out of date, and not syncing correctly. (10:25 — Mar 11) Resolved - After updating IP address entries on the new mirrors server, traffic seems to have stabilized. (02:36 — Mar 11) Investigating - After transferring our mirrors service to a new server, connections from certain networks outside Berkeley seem to be blocked.</description>
+        <content type="html">&lt;p&gt;&lt;em&gt;Resolved&lt;/em&gt; - After some configuration fixes, all mirrors are correctly syncing. 
   &lt;span class=&#34;faded&#34;&gt;(12:30 — Mar 11)&lt;/span&gt;
 
 &lt;/p&gt;
@@ -41,30 +42,7 @@
   &lt;span class=&#34;faded&#34;&gt;(01:20 — Mar 11)&lt;/span&gt;
 
 &lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>[Resolved] OCF website downtime</title>
-        <link>https://dev-status.ocf.io/issues/2019-02-15-ocfweb-downtime/</link>
-        <pubDate>Fri, 15 Feb 2019 14:55:00 +0000</pubDate>
-        <guid>https://dev-status.ocf.io/issues/2019-02-15-ocfweb-downtime/</guid>
-        <category>2019-02-15 15:18:00</category>
-        <description>&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - This incident has been resolved. 
-  &lt;span class=&#34;faded&#34;&gt;(15:18 — Feb 15)&lt;/span&gt;
-
-&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - The OCF website is now completely down as we attempt to redploy a fixed version. 
-  &lt;span class=&#34;faded&#34;&gt;(15:14 — Feb 15)&lt;/span&gt;
-
-&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - We are seeing server errors for ocfweb access. 
-  &lt;span class=&#34;faded&#34;&gt;(14:55 — Feb 15)&lt;/span&gt;
-
-&lt;/p&gt;
-</description>
+</content>
       </item>
     
   </channel>
