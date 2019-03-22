@@ -24,6 +24,26 @@
       </item>
     
       <item>
+        <title>SSH Login</title>
+        <link>https://dev-status.ocf.io/affected/ssh-login/</link>
+        <pubDate>Fri, 22 Mar 2019 00:20:00 +0000</pubDate>
+        <guid>https://dev-status.ocf.io/affected/ssh-login/</guid>
+        <category></category>
+        <description></description>
+        <content type="html"></content>
+      </item>
+    
+      <item>
+        <title>Webhosting</title>
+        <link>https://dev-status.ocf.io/affected/webhosting/</link>
+        <pubDate>Fri, 22 Mar 2019 00:20:00 +0000</pubDate>
+        <guid>https://dev-status.ocf.io/affected/webhosting/</guid>
+        <category></category>
+        <description></description>
+        <content type="html"></content>
+      </item>
+    
+      <item>
         <title>ocfweb</title>
         <link>https://dev-status.ocf.io/affected/ocfweb/</link>
         <pubDate>Fri, 15 Feb 2019 14:55:00 +0000</pubDate>

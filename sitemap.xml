@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dev-status.ocf.io/issues/2019-03-22-nfs-outage/</loc>
+    <lastmod>2019-03-22T00:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dev-status.ocf.io/issues/2019-03-11-mirrors-downtime/</loc>
     <lastmod>2019-03-11T01:20:00+00:00</lastmod>
   </url>
@@ -19,7 +24,7 @@
   
   <url>
     <loc>https://dev-status.ocf.io/issues/</loc>
-    <lastmod>2019-03-11T01:20:00+00:00</lastmod>
+    <lastmod>2019-03-22T00:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -31,7 +36,19 @@
   
   <url>
     <loc>https://dev-status.ocf.io/</loc>
-    <lastmod>2019-03-11T01:20:00+00:00</lastmod>
+    <lastmod>2019-03-22T00:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dev-status.ocf.io/affected/ssh-login/</loc>
+    <lastmod>2019-03-22T00:20:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dev-status.ocf.io/affected/webhosting/</loc>
+    <lastmod>2019-03-22T00:20:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -8,13 +8,31 @@
     <generator>github.com/cstate</generator>
     <language>en</language>
     
-    <lastBuildDate>Mon, 11 Mar 2019 01:20:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Mar 2019 00:20:00 +0000</lastBuildDate>
     
     
     
       <atom:link href="https://dev-status.ocf.io/index.xml" rel="self" type="application/rss+xml" />
     
     
+    
+      <item>
+        <title>General NFS outage</title>
+        <link>https://dev-status.ocf.io/issues/2019-03-22-nfs-outage/</link>
+        <pubDate>Fri, 22 Mar 2019 00:20:00 +0000</pubDate>
+        <guid>https://dev-status.ocf.io/issues/2019-03-22-nfs-outage/</guid>
+        <category>2019-03-11 12:30:00</category>
+        <description>&lt;p&gt;&lt;em&gt;Update&lt;/em&gt; - We&amp;rsquo;ve had to restart our public SSH server as we try to resolve this issue. Traffic seems to be stabilizing, and we will continue to monitor the situation. 
+  &lt;span class=&#34;faded&#34;&gt;(02:30 — Mar 22)&lt;/span&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Investigating&lt;/em&gt; - We&amp;rsquo;ve noticed slowness on our ssh server ssh.ocf.berkeley.edu, and slow response times for webhosting. We&amp;rsquo;re investigating. 
+  &lt;span class=&#34;faded&#34;&gt;(00:20 — Mar 22)&lt;/span&gt;
+
+&lt;/p&gt;
+</description>
+      </item>
     
       <item>
         <title>[Resolved] Mirrors transfer downtime</title>
